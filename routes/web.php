@@ -18,7 +18,7 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Homepage', [
-        'title' => 'Yo mulai projek',
+        'title' => 'Yo mulai projek pabrik',
         'description' => 'Kejar cuan sambil belajar is our',
     ]);
 });
