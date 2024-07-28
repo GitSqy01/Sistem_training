@@ -1,8 +1,8 @@
 export function Sidebar() {
     return (
         <>
-            <section className="col-span-3">
-                <div className="bg-red-500">
+            <section className="col-span-2">
+                <div className="h-screen bg-red-500">
                     <h2>Menu</h2>
                     <ul>
                         <li>
