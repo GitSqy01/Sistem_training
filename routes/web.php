@@ -23,6 +23,10 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/coba', function (){
+    return Inertia::render('Coba');
+});
+
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [
