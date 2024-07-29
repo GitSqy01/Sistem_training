@@ -18,10 +18,18 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Homepage', [
-        'title' => 'Yo mulai projek',
+
+        'title' => 'Yo mulai projek pabrik tahu',
+
         'description' => 'Kejar cuan sambil belajar is our',
     ]);
 });
+
+
+Route::get('/dashboardpage', function (){
+    return Inertia::render('DashboardPage');
+});
+
 
 
 Route::get('/welcome', function () {
