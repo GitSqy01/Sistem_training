@@ -1,6 +1,13 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KurikulumController;
+use App\Http\Controllers\LibraryController;
+use App\Http\Controllers\LicenseController;
+use App\Http\Controllers\MatrixController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingController;
+use App\Http\Controllers\TrainingController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -16,19 +23,23 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Homepage', [
+// Route::get('/', function () {
+//     return Inertia::render('Homepage', [
 
-        'title' => 'Yo mulai projek pabrik tahu',
+//         'title' => 'Yo mulai projek pabrik tahu',
 
-        'description' => 'Kejar cuan sambil belajar is our',
-    ]);
-});
+//         'description' => 'Kejar cuan sambil belajar is our',
+//     ]);
+// });
 
 
-Route::get('/dashboardpage', function (){
-    return Inertia::render('DashboardPage');
-});
+Route::get('/', [DashboardController::class, 'index'])->name('dashboardpage');
+Route::get('/kurikulum', [KurikulumController::class, 'index'])->name('kurikulum');
+Route::get('/library', [LibraryController::class, 'index'])->name('library');
+Route::get('/lisence', [LicenseController::class, 'index'])->name('license');
+Route::get('/matrix', [MatrixController::class, 'index'])->name('matrix');
+Route::get('/training', [TrainingController::class, 'index'])->name('training');
+Route::get('/setting', [SettingController::class, 'index'])->name('setting');
 
 
 

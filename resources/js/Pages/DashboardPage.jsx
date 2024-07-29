@@ -2,7 +2,6 @@ import { Sidebar } from "@/Layouts/Sidebar";
 import { useState } from "react";
 import Bell from "../../assets/icons/bell-solid.svg";
 import Kalender from "../../assets/icons/calendar-days-solid.svg";
-
 import {
     PieChart,
     Pie,
@@ -21,6 +20,7 @@ import {
 } from "recharts";
 
 export default function DashboardPage(options) {
+    
     const dummyData = [
         { departemen: "Produksi", jumlah: 50 },
         { departemen: "Maintenance", jumlah: 10 },
