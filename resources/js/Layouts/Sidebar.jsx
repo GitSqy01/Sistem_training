@@ -12,7 +12,7 @@ export function Sidebar() {
                     <img src={Profile} alt="" className="w-[80px] h-[80px]" />
                     <div className="flex flex-col justify-center gap-4 items center">
                         <Link
-                            href="/"
+                            href="/dashboardpage"
                             className="px-8 border"
                             as="button"
                             type="button"

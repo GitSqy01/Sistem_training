@@ -27,6 +27,16 @@ Route::get('/dashboardpage', function (){
     return Inertia::render('DashboardPage');
 });
 
+Route::get('/dashboardpage/datakaryawan', function (){
+    return Inertia::render('DataKaryawanpage');
+});
+
+Route::get('/dashboardpage/datakaryawan/edit/{namakaryawan}', function ($namakaryawan){
+    return Inertia::render('Profilepage', [
+        'namakaryawan' => $namakaryawan,
+    ]);
+});
+
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [
