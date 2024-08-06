@@ -12,7 +12,7 @@ export function Sidebar() {
                     <img src={Profile} alt="" className="w-[80px] h-[80px]" />
                     <div className="flex flex-col justify-center gap-4 items center">
                         <Link
-                            href="/dashboardpage"
+                            href={route("dashboardpage")}
                             className="px-8 border"
                             as="button"
                             type="button"
@@ -20,7 +20,7 @@ export function Sidebar() {
                             Dashboard
                         </Link>
                         <Link
-                            href="/"
+                            href={route("kurikulum")}
                             className="px-8 border"
                             as="button"
                             type="button"
@@ -28,7 +28,7 @@ export function Sidebar() {
                             Kurikulum
                         </Link>
                         <Link
-                            href="/"
+                            href={route("library")}
                             className="px-8 border"
                             as="button"
                             type="button"
@@ -36,7 +36,7 @@ export function Sidebar() {
                             Library
                         </Link>
                         <Link
-                            href="/"
+                            href={route("training")}
                             className="px-8 border"
                             as="button"
                             type="button"
@@ -44,7 +44,7 @@ export function Sidebar() {
                             Training
                         </Link>
                         <Link
-                            href="/"
+                            href={route("matrix")}
                             className="px-8 border"
                             as="button"
                             type="button"
@@ -52,7 +52,7 @@ export function Sidebar() {
                             Matrix Skill
                         </Link>
                         <Link
-                            href="/"
+                            href={route("license")}
                             className="px-8 border"
                             as="button"
                             type="button"
@@ -60,7 +60,7 @@ export function Sidebar() {
                             License
                         </Link>
                         <Link
-                            href="/"
+                            href={route("setting")}
                             className="px-8 border"
                             as="button"
                             type="button"

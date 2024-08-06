@@ -6,7 +6,7 @@ export default function Kurikulumpage() {
             <div className="grid grid-cols-12">
                 <Sidebar />
                 <div>
-                    <h1>Kurikulum</h1>
+                    <h1>Kurikulum Guys</h1>
                 </div>
             </div>
         </>
