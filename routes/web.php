@@ -42,6 +42,16 @@ Route::get('/training', [TrainingController::class, 'index'])->name('training');
 Route::get('/setting', [SettingController::class, 'index'])->name('setting');
 
 
+Route::get('/dashboardpage/datakaryawan', function (){
+    return Inertia::render('DataKaryawanpage');
+});
+
+Route::get('/dashboardpage/datakaryawan/edit/{namakaryawan}', function ($namakaryawan){
+    return Inertia::render('Profilepage', [
+        'namakaryawan' => $namakaryawan,
+    ]);
+});
+
 
 Route::get('/welcome', function () {
     return Inertia::render('Welcome', [

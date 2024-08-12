@@ -18,6 +18,7 @@ import {
     LineChart,
     Line,
 } from "recharts";
+import { Link } from "@inertiajs/react";
 
 export default function DashboardPage(options) {
     
@@ -172,9 +173,12 @@ export default function DashboardPage(options) {
                     <nav className="w-full p-2">
                         <div className="flex justify-between">
                             <div className="flex items-center">
-                                <button className="px-4 py-1 font-semibold bg-indigo-500 border rounded-md">
-                                    Master Karyawan
-                                </button>
+                                <Link
+                                    href="/dashboardpage/datakaryawan"
+                                    className="px-4 py-1 font-semibold bg-indigo-500 border rounded-md"
+                                >
+                                    Master Data Karyawan
+                                </Link>
                                 <button className="mx-2">
                                     <img
                                         src={Bell}
